@@ -1,0 +1,115 @@
+:root {
+  font-size: 100%;
+}
+html {
+  box-sizing: border-box;
+  font-family: "Red Hat Display", sans-serif;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+body {
+  background-color: hsl(224, 100%, 92%);
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 1rem;
+}
+section {
+  max-width: 28rem;
+  background-color: #fff;
+  text-align: center;
+  border-radius: 1rem;
+}
+section img {
+  border-top-right-radius: 1rem;
+  border-top-left-radius: 1rem;
+  width: 100%;
+}
+img + div {
+  padding: 0 2rem 2rem;
+}
+h1 {
+  font-size: 2rem;
+  margin: 2rem 0;
+  font-weight: 900;
+}
+h1 + p {
+  font-size: 1.4rem;
+  line-height: 2rem;
+  opacity: 55%;
+  margin-bottom: 2rem;
+}
+p + div {
+  background-color: hsl(230, 75%, 98%);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 1rem;
+  padding: 1.5rem 1rem;
+}
+p + div img {
+  width: 4rem;
+}
+p + div p {
+  font-weight: 700;
+  font-size: 1.3rem;
+  position: relative;
+  left: -1rem;
+  top: -1rem;
+}
+p + div p::after {
+  content: "$59.99/year";
+  font-weight: 500;
+  color: hsl(224, 23%, 55%);
+  font-size: 1.25rem;
+  position: absolute;
+  left: 0;
+  bottom: -1.7rem;
+}
+p + div a {
+  font-size: 1.1rem;
+  color: blue;
+  font-weight: 700;
+}
+p + div a:hover {
+  text-decoration: none;
+  color: #766cf1;
+}
+div + a {
+  display: block;
+  background-color: hsl(245, 75%, 52%);
+  color: white;
+  padding: 1.5rem;
+  text-decoration: none;
+  border-radius: 1rem;
+  margin: 2rem 0;
+  font-size: 1.1rem;
+  font-weight: 700;
+  box-shadow: hsl(247, 69%, 92%) 0px 25px 20px;
+}
+div + a:hover {
+  background-color: #766cf1;
+}
+div + a + p {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: hsl(224, 23%, 55%);
+}
+div + a + p:hover {
+  color: #121b3e;
+  cursor: pointer;
+}
+@media (min-width: 1440px) {
+  body {
+    background: url(../images/pattern-background-desktop.svg) repeat no-repeat;
+    background-color: #e0e8ff;
+  }
+  section {
+    max-width: 35rem;
+  }
+}
